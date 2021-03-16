@@ -1,0 +1,30 @@
+:root{
+    --min-padding: 15px;
+}
+body{
+    background: #1b1b1b;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container > * {
+    padding: var(--min-padding);
+}
+
+.book{
+    border: solid thin white;
+    margin-bottom: 5px;
+    padding: var(--min-padding);
+}
+.title, .content{
+    margin: 0;
+}
+
+main{
+    flex-grow: 1;
+}
